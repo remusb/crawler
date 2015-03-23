@@ -3,7 +3,6 @@
         "symfony/console": "~2.6",
         "symfony/config": "~2.6",
         "symfony/yaml": "~2.6",
-        "predis/predis": "dev-master",
         "evseevnn/php-cassandra-binary": "dev-master",
         "fabpot/goutte": "~2.0",
         "glenscott/url-normalizer": "dev-master"
