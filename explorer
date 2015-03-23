@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+// application.php
+require __DIR__ . '/vendor/autoload.php';
+
+use Explorer\Console\ExplorerApplication;
+use Common\Config as GlobalConfig;
+
+GlobalConfig::Instance()->setup( __DIR__.'/config' );
+
+$app = new ExplorerApplication();
+$app->run();

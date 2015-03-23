@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+ini_set('default_socket_timeout', 600);
+
+// application.php
+require __DIR__ . '/vendor/autoload.php';
+
+use Crawler\Console\CrawlerApplication;
+use Common\Config as GlobalConfig;
+
+GlobalConfig::Instance()->setup( __DIR__.'/config' );
+
+$app = new CrawlerApplication();
+$app->run();
